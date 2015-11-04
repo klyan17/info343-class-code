@@ -181,7 +181,11 @@
     }, _createCancel: function() {
       var that   = $(this),
           icon   = this.opt.cancelOff,
+<<<<<<< HEAD
           cancel = $('<i />', { 'class': icon, title: this.opt.cancelHint });
+=======
+          cancel = $('<i />', { class: icon, title: this.opt.cancelHint });
+>>>>>>> 0e1f3c03a332ce37c172bdee43ad742a11ba4994
 
       if (this.opt.cancelPlace == 'left') {
         that.prepend('&#160;').prepend(cancel);
@@ -201,7 +205,11 @@
 
         icon = this.opt[icon];
 
+<<<<<<< HEAD
         $('<i />', { 'class' : icon, title: title, 'data-score': i }).appendTo(this);
+=======
+        $('<i />', { class : icon, title: title, 'data-score': i }).appendTo(this);
+>>>>>>> 0e1f3c03a332ce37c172bdee43ad742a11ba4994
 
         if (this.opt.space) {
           that.append((i < this.opt.number) ? '&#160;' : '');
